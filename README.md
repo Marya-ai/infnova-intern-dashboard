@@ -47,10 +47,10 @@ A high-fidelity, fully responsive, and secure internship applicant management da
    npm run dev
 
 ###  Future Improvements
- **AI-Powered Assistant**: Auto-summarize motivation statements and suggest interview questions.
-**Automated Email Workflows**: Send status change notifications to candidates.
-**Role-Based Access Control (RBAC)**: Granular permissions for different user types.
-**Comprehensive Audit Logs**: Track all user actions for accountability.
+- **AI-Powered Assistant**: Auto-summarize motivation statements and suggest interview questions.
+- **Automated Email Workflows**: Send status change notifications to candidates.
+- **Role-Based Access Control (RBAC)**: Granular permissions for different user types.
+- **Comprehensive Audit Logs**: Track all user actions for accountability.
 
 Submitted by Marya Tadesse - Frontend Internship Candidate
 INFNOVA Technologies

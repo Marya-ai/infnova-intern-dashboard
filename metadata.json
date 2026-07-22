@@ -1,0 +1,6 @@
+{
+  "name": "INFNOVA Intern Dashboard",
+  "description": "Internship applicant management dashboard for INFNOVA Technologies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

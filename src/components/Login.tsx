@@ -94,12 +94,6 @@ export default function Login({ onLoginSuccess, expiredMessage }: LoginProps) {
     }
   };
 
-  const handleQuickFill = () => {
-    setEmail('admin@infnova.tech');
-    setPassword('InternChallenge2026!');
-    setError(null);
-  };
-
   const formatLastLogin = (isoString: string) => {
     const date = new Date(isoString);
     return date.toLocaleString('en-US', { 
@@ -251,17 +245,6 @@ export default function Login({ onLoginSuccess, expiredMessage }: LoginProps) {
               )}
             </button>
           </form>
-
-          <div className="mt-8 pt-6 border-t border-slate-100 text-center">
-            <button
-              type="button"
-              onClick={handleQuickFill}
-              className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-indigo-50 text-indigo-700 text-xs font-semibold hover:bg-indigo-100 transition-all cursor-pointer"
-            >
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>Use Demo Credentials</span>
-            </button>
-          </div>
         </div>
 
         <div className="bg-slate-50 px-8 py-4 text-center text-xs text-slate-400 border-t border-slate-100">

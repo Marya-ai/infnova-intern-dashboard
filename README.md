@@ -2,8 +2,8 @@
 
 A high-fidelity, fully responsive, and secure internship applicant management dashboard built with **React 19**, **TypeScript**, and **Tailwind CSS v4**. This project was developed as a practical challenge submission for the Frontend Internship at **INFNOVA Technologies** (Addis Ababa, Ethiopia).
 
-🔗 **Live Demo**: [Insert your Vercel/Render HTTPS URL here]  
-🔗 **Source Code**: [Insert your GitHub Repository URL here]
+🔗 **Live Demo**: https://infnova-intern-dashboard-raf7bwpl7-m20015794-2729s-projects.vercel.app/  
+🔗 **Source Code**: https://github.com/Marya-ai/infnova-intern-dashboard
 
 ---
 
@@ -56,5 +56,5 @@ The codebase is structured into self-contained, modular components to prevent to
 ### Running Locally
 1. Clone the repository and navigate to the project directory:
    ```bash
-   git clone https://github.com/your-username/infnova-dashboard.git
-   cd infnova-dashboard
+   git clone https://github.com/Marya-ai/infnova-intern-dashboard.git
+   cd infnova-intern-dashboard

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
-import { Lock, Mail, AlertCircle, Sparkles, Eye, EyeOff, ShieldCheck, Clock, CheckCircle } from 'lucide-react';
+import { Lock, Mail, AlertCircle, Eye, EyeOff, ShieldCheck, Clock, CheckCircle } from 'lucide-react';
 import { LoginResponse } from '../types';
 import infnovaLogo from '../assets/images/infnova_logo_1784363241713.jpg';
 
@@ -46,21 +46,16 @@ export default function Login({ onLoginSuccess, expiredMessage }: LoginProps) {
     setError(null);
 
     try {
-      console.log('[LOGIN] Attempting login with:', email);
-      
       const res = await fetch(`${API_BASE}/auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: email.trim(), password }),
       });
 
-      console.log('[LOGIN] Response status:', res.status);
-
       if (!res.ok) {
         let errorMsg = 'Invalid email or password.';
         try {
           const errorData = await res.json();
-          console.log('[LOGIN] Error response:', errorData);
           errorMsg = errorData.message || errorData.error || errorMsg;
         } catch {
         }
@@ -68,7 +63,6 @@ export default function Login({ onLoginSuccess, expiredMessage }: LoginProps) {
       }
 
       const data = await res.json();
-      console.log('[LOGIN] Success response:', data);
       
       if (!data.accessToken || !data.user) {
         throw new Error('Server returned invalid response format.');
@@ -87,7 +81,6 @@ export default function Login({ onLoginSuccess, expiredMessage }: LoginProps) {
 
       onLoginSuccess(data as LoginResponse);
     } catch (err: any) {
-      console.error('[LOGIN] Error:', err);
       setError(err.message || 'An unexpected error occurred.');
     } finally {
       setLoading(false);
